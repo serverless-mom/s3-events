@@ -1,99 +1,37 @@
 {
   "nodes": [
     {
-      "id": "f82cea7",
+      "id": "e77917a6",
       "type": "function",
-      "name": "Hello!",
-      "outputs": 1,
-      "memorySize": 128,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "noerr": true,
-      "x": 400,
-      "y": 185,
-      "wires": [
-        []
-      ]
-    },
-    {
-      "id": "43e7785b",
-      "type": "function",
-      "name": "Echo",
-      "outputs": 1,
-      "memorySize": 128,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "noerr": true,
-      "x": 400,
-      "y": 285,
-      "wires": [
-        []
-      ]
-    },
-    {
-      "id": "86591158",
-      "type": "http",
-      "x": 197.5,
-      "y": 235,
-      "width": 185,
-      "height": 260
-    },
-    {
-      "id": "10125414",
-      "type": "restApiEndpoint",
-      "x": 185,
-      "y": 185,
-      "name": "",
-      "path": "/",
-      "method": "GET",
-      "wires": [
-        [
-          "f82cea7"
-        ]
-      ]
-    },
-    {
-      "id": "8b4a8772",
-      "type": "restApiEndpoint",
-      "x": 195,
-      "y": 285,
-      "name": "",
-      "path": "/{message}",
-      "method": "GET",
-      "wires": [
-        [
-          "43e7785b"
-        ]
-      ]
-    },
-    {
-      "id": "342f3dda",
-      "type": "errors",
-      "x": 200,
-      "y": 400,
-      "wires": [
-        [
-          "c23b2319"
-        ]
-      ]
-    },
-    {
-      "id": "c23b2319",
-      "type": "function",
-      "x": 410,
-      "y": 400,
-      "name": "LogErrors",
+      "x": 500,
+      "y": 75,
+      "width": 100,
+      "height": 30,
+      "name": "myLogger",
       "outputs": 1,
       "memorySize": 3008,
       "timeout": 30,
-      "runtime": "nodejs",
+      "runtime": "nodejs8",
       "location": "inline",
       "envVars": {},
       "entryPoint": "",
       "wires": [
         []
+      ]
+    },
+    {
+      "id": "489d2685",
+      "type": "objectStore",
+      "x": 285,
+      "y": 55,
+      "width": 100,
+      "height": 30,
+      "publicPermissions": "none",
+      "websiteHosting": false,
+      "wires": [
+        [
+          "e77917a6"
+        ]
       ]
     }
   ]
