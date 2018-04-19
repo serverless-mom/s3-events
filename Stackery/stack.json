@@ -3,8 +3,8 @@
     {
       "id": "e77917a6",
       "type": "function",
-      "x": 500,
-      "y": 75,
+      "x": 685,
+      "y": 225,
       "width": 100,
       "height": 30,
       "name": "myLogger",
@@ -22,8 +22,8 @@
     {
       "id": "489d2685",
       "type": "objectStore",
-      "x": 285,
-      "y": 55,
+      "x": 370,
+      "y": 225,
       "width": 100,
       "height": 30,
       "publicPermissions": "none",
