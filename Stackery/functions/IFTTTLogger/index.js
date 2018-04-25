@@ -26,9 +26,9 @@ exports.handler = async message  => {
     res.on('data', function(d) {
       console.log('Body: ' + d);
     });
-    resolve(res.statusCode);
+    console.log(res.statusCode);
   }).on('error', function(e) {
     console.log("Got error: " + e.message);
-    reject(e.message);
+    console.log(e.message);
   });
 };
