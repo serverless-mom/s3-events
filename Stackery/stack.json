@@ -37,8 +37,8 @@
     {
       "id": "23075796",
       "type": "function",
-      "x": 585,
-      "y": 225,
+      "x": 565,
+      "y": 435,
       "width": 100,
       "height": 30,
       "name": "IFTTTLogger",
